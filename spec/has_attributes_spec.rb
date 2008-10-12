@@ -41,7 +41,7 @@ describe HasAttributes do
   end
   
   describe ".attributes=" do
-    it "should be able to set properties" do
+    it "should set properties" do
       attributes = {:foo => "value1"}
       @object_with_attributes.attributes= attributes
       @object_with_attributes.attributes.should == attributes
