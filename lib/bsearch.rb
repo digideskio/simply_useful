@@ -114,6 +114,12 @@ module Bsearch
     upper = bsearch_upper_boundary(range, &block)
     return lower ... upper
   end
+  
+  def bfind(range = 0 ... self.length, &block)
+    pos = self.bsearch(range, &block)
+    return nil if pos.nil?
+    self[pos]
+  end
 end
 
 Array.send :include, Bsearch
