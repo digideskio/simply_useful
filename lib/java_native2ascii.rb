@@ -1,3 +1,5 @@
+require('iconv')
+
 # Mimics Java's native2ascii tool
 class JavaNative2Ascii
   def self.ascii2native str
@@ -24,7 +26,7 @@ class JavaNative2Ascii
       end
       
       if (last > 127 || b > 0)
-        out << "\\u" + sprintf("%04X", (b << 8 | last))
+        out << "\\u" + sprintf("%04x", (b << 8 | last))
       else
         out << last
       end
