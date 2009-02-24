@@ -26,7 +26,7 @@ class JavaNative2Ascii
       end
       
       if (last > 127 || b > 0)
-        out << "\\u" + sprintf("%04x", (b << 8 | last))
+        out << sprintf("\\u%04x", (b << 8 | last))
       else
         out << last
       end
