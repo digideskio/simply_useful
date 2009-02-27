@@ -2,3 +2,7 @@
 .svn
 doc/*
 nbproject/
+*.sw?
+.DS_Store
+coverage
+pkg/
