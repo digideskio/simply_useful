@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{simply_useful}
-  s.version = "0.1.2"
+  s.version = "0.1.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Maciej Bilas"]
-  s.date = %q{2009-02-28}
+  s.date = %q{2009-03-03}
   s.description = %q{A set of simply useful classes}
   s.email = %q{maciej@inszy.org}
   s.files = ["VERSION.yml", "lib/java_native2ascii.rb", "lib/format.rb", "lib/has_attributes.rb", "lib/simply_useful.rb", "lib/bsearch.rb", "spec/spec_helper.rb", "spec/spec.opts", "spec/bsearch_spec.rb", "spec/has_attributes_spec.rb", "spec/java_native2ascii_spec.rb"]
