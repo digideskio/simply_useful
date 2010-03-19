@@ -9,8 +9,9 @@ begin
     s.summary = "A set of simply useful classes"
     s.email = "maciej@inszy.org"
     s.homepage = "http://github.com/maciej/simply_useful"
-    s.description = "A set of simply useful classes"
+    s.description = "A set of simply useful classes. Contains extensions to core Ruby classes."
     s.authors = ["Maciej Bilas"]
+	s.rubyforge_project = %q{simply_useful}
   end
 rescue LoadError
   puts "Jeweler not available. Install it with: sudo gem install technicalpickles-jeweler -s http://gems.github.com"
