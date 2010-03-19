@@ -22,14 +22,18 @@ Gem::Specification.new do |s|
      "Rakefile",
      "VERSION.yml",
      "lib/bsearch.rb",
+     "lib/core_ext.rb",
+     "lib/core_ext/hash.rb",
      "lib/format.rb",
      "lib/has_attributes.rb",
      "lib/java_native2ascii.rb",
      "lib/simply_useful.rb",
      "simply_useful.gemspec",
      "spec/bsearch_spec.rb",
+     "spec/core_ext/hash_spec.rb",
      "spec/has_attributes_spec.rb",
      "spec/java_native2ascii_spec.rb",
+     "spec/simply_useful_spec.rb",
      "spec/spec.opts",
      "spec/spec_helper.rb"
   ]
@@ -40,6 +44,8 @@ Gem::Specification.new do |s|
   s.summary = %q{A set of simply useful classes}
   s.test_files = [
     "spec/spec_helper.rb",
+     "spec/simply_useful_spec.rb",
+     "spec/core_ext/hash_spec.rb",
      "spec/bsearch_spec.rb",
      "spec/has_attributes_spec.rb",
      "spec/java_native2ascii_spec.rb"
