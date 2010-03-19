@@ -18,7 +18,7 @@ module SimplyUseful
         _deep_symbolize_keys(self)
       end
 
-      def deep_symolize_keys!
+      def deep_symbolize_keys!
         self.replace(self.deep_symbolize_keys)
       end
 
@@ -36,7 +36,6 @@ module SimplyUseful
     end
   end
 end
-
 
 class Hash
   include SimplyUseful::CoreExtensions::Keys
