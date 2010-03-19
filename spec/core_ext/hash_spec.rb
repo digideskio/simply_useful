@@ -17,6 +17,13 @@ describe SimplyUseful::CoreExtensions::Keys do
       te = {:a => {:b => "c"}}
       te.should == ta
     end
+
+    it "should symbolize keys in child array's hashes" do
+      t = {"a" => [{"b" => "c", "d" => "e"}]}
+      te = {:a => [{:b => "c", :d => "e"}]}
+      ta = t.deep_symbolize_keys
+      te.should == ta
+    end
   end
 
 end

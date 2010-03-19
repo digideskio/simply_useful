@@ -25,12 +25,19 @@ module SimplyUseful
       private
 
       def _deep_symbolize_keys(value)
-        return value unless value.is_a?(Hash)
-        hash = value.inject({}) do |memo,(k,v)|
-          memo[(k.to_sym rescue k)|| k] = _deep_symbolize_keys(v)
-          memo
+        if value.is_a? Hash
+          hash = value.inject({}) do |memo,(k,v)|
+            memo[(k.to_sym rescue k)|| k] = _deep_symbolize_keys(v)
+            memo
+          end
+          return hash
+        elsif value.is_a? Array
+          value.map do |e|
+            _deep_symbolize_keys(e)
+          end
+        else
+          value
         end
-        return hash
       end
 
     end
