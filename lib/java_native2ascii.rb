@@ -8,7 +8,10 @@ class JavaNative2Ascii
       i = s[2,4].hex
       out << (i & 0xFF)
       out << (i >> 8)
-      out = Iconv.conv("UTF-8", "UNICODE", out)
+      # Tested on MacOS 10.6
+      # The UNICODE encoding name apparently disappeared from Iconv
+      # I've changed it to UCS-2LE, which makes the Specs pass.
+      out = Iconv.conv("UTF-8", "UCS-2LE", out)
     end
   end
   
