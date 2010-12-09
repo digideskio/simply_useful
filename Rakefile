@@ -11,7 +11,7 @@ begin
     s.homepage = "http://github.com/maciej/simply_useful"
     s.description = "A set of simply useful classes. Contains extensions to core Ruby classes."
     s.authors = ["Maciej Bilas"]
-	s.rubyforge_project = %q{simply_useful}
+    s.rubyforge_project = %q{simply_useful}
   end
 rescue LoadError
   puts "Jeweler not available. Install it with: sudo gem install technicalpickles-jeweler -s http://gems.github.com"
@@ -55,7 +55,7 @@ end
 require 'rake/rdoctask'
 Rake::RDocTask.new do |rdoc|
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = 'the-perfect-gemx'
+  rdoc.title = 'Simply useful'
   rdoc.options << '--line-numbers' << '--inline-source'
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
