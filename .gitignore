@@ -9,3 +9,4 @@ pkg/
 simply_useful*.gem
 nbproject/private
 .idea
+Gemfile.lock
