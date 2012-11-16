@@ -19,12 +19,12 @@ end
 
 # Specs
 begin
-  require 'spec'
+  require 'rspec'
 rescue LoadError
-  require 'spec'
+  require 'rspec'
 end
 begin
-  require 'spec/rake/spectask'
+  require "rspec/core/rake_task"
 rescue LoadError
   puts <<-EOS
 	  To use rspec for testing you must install rspec gem:
@@ -33,26 +33,14 @@ rescue LoadError
   exit(0)
 end
 
-desc "Run the specs under spec/models"
-Spec::Rake::SpecTask.new do |t|
-  t.spec_opts = ['--options', "spec/spec.opts"]
-  t.spec_files = FileList['spec/**/*_spec.rb']
-end
-
-# Coverage
-begin
-  require 'rcov/rcovtask'
-  Rcov::RcovTask.new do |t|
-    t.libs << 'test'
-    t.test_files = FileList['test/**/*_test.rb']
-    t.verbose = true
-  end
-rescue LoadError
-  puts "RCov is not available. In order to run rcov, you must: sudo gem install spicycode-rcov"
+desc "Run the specs under spec"
+RSpec::Core::RakeTask.new do |t|
+  t.rspec_opts = ['--options', "spec/spec.opts"]
+  t.pattern = 'spec/**/*_spec.rb'
 end
 
 # RDoc
-require 'rake/rdoctask'
+require 'rdoc/task'
 Rake::RDocTask.new do |rdoc|
   rdoc.rdoc_dir = 'rdoc'
   rdoc.title = 'Simply useful'
