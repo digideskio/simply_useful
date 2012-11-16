@@ -7,6 +7,6 @@ coverage
 pkg/
 .specification
 simply_useful*.gem
-nbproject/private
 .idea
 Gemfile.lock
+nbproject
