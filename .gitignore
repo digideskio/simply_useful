@@ -2,11 +2,25 @@
 .svn
 doc/*
 *.sw?
+
+# MacOS
 .DS_Store
+
+# rcov generated
 coverage
+coverage.data
+
+# bundler
+.bundle
+
+# jeweler
 pkg/
+
+# Others
 .specification
 simply_useful*.gem
+
 .idea
-Gemfile.lock
 nbproject
+
+Gemfile.lock
