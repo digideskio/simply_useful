@@ -14,8 +14,6 @@ class Module
         methods << "#{options_or_property.to_s}="
       end
     end
-    puts methods
-    puts options
 
     delegate *methods, options
   end
