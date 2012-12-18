@@ -2,7 +2,7 @@
 # encoding: utf-8
 
 require File.dirname(__FILE__) + '/spec_helper'
-require 'java_native2ascii'
+require 'simply_useful/java_native2ascii'
 
 class JavaNative2AsciiHelper
   def native_ascii_pairs

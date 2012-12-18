@@ -1,5 +1,5 @@
 require File.dirname(__FILE__) + '/spec_helper'
-require 'has_attributes'
+require 'simply_useful/has_attributes'
 
 class ObjectWithAttributes
   include SimplyUseful::HasAttributes

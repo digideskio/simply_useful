@@ -1,5 +1,5 @@
 require File.join(File.dirname(__FILE__), '..', 'spec_helper')
-require 'core_ext/hash'
+require 'simply_useful/core_ext/hash'
 
 describe SimplyUseful::CoreExtensions::Keys do
 

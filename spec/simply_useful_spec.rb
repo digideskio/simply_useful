@@ -1,5 +1,5 @@
 require File.dirname(__FILE__) + '/spec_helper'
-require 'simply_useful'
+require 'simply_useful/all'
 
 describe SimplyUseful do
   it "should load" do

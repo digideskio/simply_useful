@@ -1,5 +1,5 @@
 require File.dirname(__FILE__) + '/spec_helper'
-require 'bsearch'
+require 'simply_useful/bsearch'
 
 describe SimplyUseful::Bsearch do
   
