@@ -38,6 +38,7 @@ Gem::Specification.new do |s|
     "spec/core_ext/property_delegation_spec.rb",
     "spec/has_attributes_spec.rb",
     "spec/java_native2ascii_spec.rb",
+    "spec/simply_useful_all_spec.rb",
     "spec/simply_useful_spec.rb",
     "spec/spec.opts",
     "spec/spec_helper.rb"
