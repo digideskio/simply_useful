@@ -2,7 +2,7 @@ require File.dirname(__FILE__) + '/spec_helper'
 require 'has_attributes'
 
 class ObjectWithAttributes
-  include HasAttributes
+  include SimplyUseful::HasAttributes
   
   attr_accessor :foo
   
@@ -11,7 +11,7 @@ class ObjectWithAttributes
   end
 end
 
-describe HasAttributes do
+describe SimplyUseful::HasAttributes do
   
   before(:each) do
     @object_with_attributes = ObjectWithAttributes.new

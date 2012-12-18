@@ -14,7 +14,7 @@ class JavaNative2AsciiHelper
   end
 end
 
-describe JavaNative2Ascii do
+describe SimplyUseful::JavaNative2Ascii do
   before(:all) do
     @helper = JavaNative2AsciiHelper.new
   end
@@ -22,14 +22,14 @@ describe JavaNative2Ascii do
   it "should convert from ascii to native" do
     @helper.native_ascii_pairs.each do |native_ascii|
       native,ascii = native_ascii
-      JavaNative2Ascii.ascii2native(ascii).should == native
+      SimplyUseful::JavaNative2Ascii.ascii2native(ascii).should == native
     end
   end
   
   it "should convert from native to ascii" do
     @helper.native_ascii_pairs.each do |native_ascii|
       native,ascii = native_ascii
-      JavaNative2Ascii.native2ascii(native).should == ascii
+      SimplyUseful::JavaNative2Ascii.native2ascii(native).should == ascii
     end
   end
 end

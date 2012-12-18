@@ -1,7 +1,7 @@
 require File.dirname(__FILE__) + '/spec_helper'
 require 'bsearch'
 
-describe Bsearch do
+describe SimplyUseful::Bsearch do
   
   before do
     @sorted_array = [0,1,2,3,8,16,32,64,100]
