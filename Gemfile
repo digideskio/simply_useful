@@ -11,4 +11,6 @@ group :development do
   gem "bundler", "~> 1.2.0"
   gem "jeweler", "~> 1.8.4"
   gem "simplecov", ">= 0", :require => false
+
+  gem "activesupport", "~> 3"
 end
