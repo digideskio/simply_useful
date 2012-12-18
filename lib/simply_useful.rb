@@ -1,5 +1,3 @@
-require('has_attributes')
-require('bsearch')
-require('format')
+module SimplyUseful
 
-require('core_ext')
+end
