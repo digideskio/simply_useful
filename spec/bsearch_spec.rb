@@ -30,10 +30,10 @@ describe SimplyUseful::Bsearch do
   
   describe ".bsearch" do
     it "should return the first position of an object" do
-      @array_with_duplicates.bsearch{|x| x <=> 1}.should == 0
-      @array_with_duplicates.bsearch{|x| x <=> 3}.should == 3
-      @array_with_duplicates.bsearch{|x| x <=> 4}.should == 4
-      @array_with_duplicates.bsearch{|x| x <=> 14}.should == @array_with_duplicates.length-3
+      @array_with_duplicates.bsearch_first{|x| x <=> 1}.should == 0
+      @array_with_duplicates.bsearch_first{|x| x <=> 3}.should == 3
+      @array_with_duplicates.bsearch_first{|x| x <=> 4}.should == 4
+      @array_with_duplicates.bsearch_first{|x| x <=> 14}.should == @array_with_duplicates.length-3
     end
   end
   

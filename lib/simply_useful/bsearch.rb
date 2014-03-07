@@ -1,4 +1,8 @@
 #
+# DEPRECATED. Ruby now has a binary search built in
+#
+
+#
 # Ruby/Bsearch - a binary search library for Ruby.
 #
 # Copyright (C) 2001 Satoru Takabayashi <satoru@namazu.org>
@@ -75,8 +79,6 @@ module SimplyUseful
       end
     end
 
-    alias bsearch bsearch_first
-
     #
     # Return the upper boundary. (outside)
     #
@@ -124,7 +126,7 @@ module SimplyUseful
     end
 
     def bfind(range = 0 ... self.length, &block)
-      pos = self.bsearch(range, &block)
+      pos = self.bsearch_first(range, &block)
       return nil if pos.nil?
       self[pos]
     end
