@@ -11,5 +11,9 @@ module SimplyUseful
       system(*args)
     end
 
+    def bundler_run(cmd, env = nil)
+      opts = {orig_cmd: cmd}
+      run("bundle exec #{cmd}", env, opts)
+    end
   end
 end
