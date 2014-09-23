@@ -2,6 +2,10 @@
 
 module SimplyUseful
   module Cli
+
+    # Runs the specified command using Kernel.system call.
+    # 
+    # Returns true if the command gives zero exit status, false for non zero exit status. 
     def run(cmd, env = nil, opts = {})
       args = []
       args << env unless env.nil?
